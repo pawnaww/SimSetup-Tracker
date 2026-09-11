@@ -66,16 +66,7 @@ SimSetup Tracker to webowa aplikacja w C# / .NET służąca do zarządzania konf
 **Koniec sprintu — 02.10** 
 * **Co ostatecznie musi być gotowe?** Kompilująca się solucja, w której stworzenie nowego obiektu w kodzie odzwierciedla się w fizycznej tabeli bazy danych, a kod jest zapisany (commit) na głównej gałęzi w repozytorium.
 
-### 4. PODZIAŁ ODPOWIEDZIALNOŚCI 
-| Obszar / zadanie | Osoba odpowiedzialna | Współpracuje |
-|---|---|---|
-| Architektura i Modele C# | Paweł Nawrocki | - |
-| Infrastruktura Bazy (EF Core) | Paweł Nawrocki | - |
-| Zarządzanie repozytorium GitHub | Paweł Nawrocki | - |
-
-
-
-### 5. ZALEŻNOŚCI I RYZYKA 
+### 4. ZALEŻNOŚCI I RYZYKA 
 * **Od czego zależy wykonanie naszych zadań?** Od poprawnej instalacji pakietów NuGet dla Entity Framework, braku konfliktów w środowisku .NET i dostępu do dokumentacji.
 * **Co może spowodować opóźnienie?** Błędy w logicznym powiązaniu relacji między tabelami (np. jeden-do-wielu dla Car -> Setup) podczas tworzenia migracji bazy danych lub problemy z synchronizacją z serwerem GitHub.
 * **Jak możemy zareagować, jeśli pojawi się problem?** Uprościć strukturę bazy do jednej, "płaskiej" tabeli w celu zrealizowania minimum na zaliczenie sprintu. Poszukać rozwiązania specyficznych wyjątków kompilatora w dokumentacji Microsoft lub na StackOverflow.

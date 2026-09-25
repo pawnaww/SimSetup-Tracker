@@ -1,0 +1,18 @@
+## Visual Studio / .NET Core
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## SQLite Database & Cache
+*.db
+*.db-shm
+*.db-wal
+
+## OS generated
+.DS_Store
+Thumbs.db

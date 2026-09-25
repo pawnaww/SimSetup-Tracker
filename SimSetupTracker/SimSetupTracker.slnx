@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SimSetup.Api/SimSetup.Api.csproj" />
+  <Project Path="SimSetup.Shared/SimSetup.Shared.csproj" />
+</Solution>

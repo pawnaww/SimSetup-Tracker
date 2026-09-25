@@ -1,0 +1,44 @@
+@SimSetup.Api_HostAddress = http://localhost:5021
+
+### 1. Pobierz listę wszystkich samochodów
+GET {{SimSetup.Api_HostAddress}}/api/cars
+Accept: application/json
+
+###
+
+### 2. Pobierz samochód o ID = 1 (z powiązanymi setupami)
+GET {{SimSetup.Api_HostAddress}}/api/cars/1
+Accept: application/json
+
+###
+
+### 3. Dodaj nowy samochód (POST)
+POST {{SimSetup.Api_HostAddress}}/api/cars
+Content-Type: application/json
+
+{
+  "brand": "Aston Martin",
+  "model": "Vantage AMR GT3",
+  "year": 2024
+}
+
+###
+
+### 4. Zaktualizuj samochód o ID = 1 (PUT)
+PUT {{SimSetup.Api_HostAddress}}/api/cars/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "brand": "Ferrari",
+  "model": "296 GT3",
+  "year": 2023
+}
+
+###
+
+### 5. Usuń samochód o ID = 3 (DELETE)
+DELETE {{SimSetup.Api_HostAddress}}/api/cars/3
+Accept: application/json
+
+###
